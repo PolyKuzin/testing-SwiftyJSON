@@ -3,16 +3,17 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		99A689C525338F07004F65D6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99A689C425338F07004F65D6 /* AppDelegate.swift */; };
 		99A689C725338F07004F65D6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99A689C625338F07004F65D6 /* SceneDelegate.swift */; };
-		99A689C925338F07004F65D6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99A689C825338F07004F65D6 /* ViewController.swift */; };
 		99A689CC25338F07004F65D6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 99A689CA25338F07004F65D6 /* Main.storyboard */; };
 		99A689CE25338F0A004F65D6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 99A689CD25338F0A004F65D6 /* Assets.xcassets */; };
 		99A689D125338F0A004F65D6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 99A689CF25338F0A004F65D6 /* LaunchScreen.storyboard */; };
+		99A689DF2533927C004F65D6 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99A689DE2533927C004F65D6 /* TableViewController.swift */; };
+		99A689E3253392D9004F65D6 /* JSONData.json in Resources */ = {isa = PBXBuildFile; fileRef = 99A689E2253392D9004F65D6 /* JSONData.json */; };
 		F8940EBA193FD50CAE26DD4B /* Pods_testing_SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC6F3A66AC6464D0337641DB /* Pods_testing_SwiftyJSON.framework */; };
 /* End PBXBuildFile section */
 
@@ -20,11 +21,12 @@
 		99A689C125338F07004F65D6 /* testing-SwiftyJSON.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "testing-SwiftyJSON.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		99A689C425338F07004F65D6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		99A689C625338F07004F65D6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		99A689C825338F07004F65D6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		99A689CB25338F07004F65D6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		99A689CD25338F0A004F65D6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		99A689D025338F0A004F65D6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		99A689D225338F0A004F65D6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		99A689DE2533927C004F65D6 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		99A689E2253392D9004F65D6 /* JSONData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = JSONData.json; sourceTree = "<group>"; };
 		A4F1C310072A220C499E3B88 /* Pods-testing-SwiftyJSON.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-testing-SwiftyJSON.release.xcconfig"; path = "Target Support Files/Pods-testing-SwiftyJSON/Pods-testing-SwiftyJSON.release.xcconfig"; sourceTree = "<group>"; };
 		EC6F3A66AC6464D0337641DB /* Pods_testing_SwiftyJSON.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_testing_SwiftyJSON.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F7413D4244634D2274B857A0 /* Pods-testing-SwiftyJSON.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-testing-SwiftyJSON.debug.xcconfig"; path = "Target Support Files/Pods-testing-SwiftyJSON/Pods-testing-SwiftyJSON.debug.xcconfig"; sourceTree = "<group>"; };
@@ -48,7 +50,6 @@
 				F7413D4244634D2274B857A0 /* Pods-testing-SwiftyJSON.debug.xcconfig */,
 				A4F1C310072A220C499E3B88 /* Pods-testing-SwiftyJSON.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -73,11 +74,12 @@
 		99A689C325338F07004F65D6 /* testing-SwiftyJSON */ = {
 			isa = PBXGroup;
 			children = (
+				99A689CD25338F0A004F65D6 /* Assets.xcassets */,
 				99A689C425338F07004F65D6 /* AppDelegate.swift */,
 				99A689C625338F07004F65D6 /* SceneDelegate.swift */,
-				99A689C825338F07004F65D6 /* ViewController.swift */,
+				99A689DE2533927C004F65D6 /* TableViewController.swift */,
+				99A689E2253392D9004F65D6 /* JSONData.json */,
 				99A689CA25338F07004F65D6 /* Main.storyboard */,
-				99A689CD25338F0A004F65D6 /* Assets.xcassets */,
 				99A689CF25338F0A004F65D6 /* LaunchScreen.storyboard */,
 				99A689D225338F0A004F65D6 /* Info.plist */,
 			);
@@ -152,6 +154,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				99A689D125338F0A004F65D6 /* LaunchScreen.storyboard in Resources */,
+				99A689E3253392D9004F65D6 /* JSONData.json in Resources */,
 				99A689CE25338F0A004F65D6 /* Assets.xcassets in Resources */,
 				99A689CC25338F07004F65D6 /* Main.storyboard in Resources */,
 			);
@@ -206,8 +209,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				99A689C925338F07004F65D6 /* ViewController.swift in Sources */,
 				99A689C525338F07004F65D6 /* AppDelegate.swift in Sources */,
+				99A689DF2533927C004F65D6 /* TableViewController.swift in Sources */,
 				99A689C725338F07004F65D6 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
